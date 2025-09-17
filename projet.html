@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aperçu de l'Incubateur des Projets Today - Découvrez nos concepts innovants de maturation de projets à travers le monde">
+    <meta name="keywords" content="Today Holding, incubateur, projets, maturation, conception, investissement, développement">
+    <meta name="author" content="Today Holding Society">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0c0cc9ff">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.todayholdingsociety.com/incubateur">
+    <meta property="og:title" content="Aperçu de l'Incubateur des Projets Today">
+    <meta property="og:description" content="Découvrez nos concepts innovants de maturation de projets à travers le monde">
+    <meta property="og:image" content="https://www.todayholdingsociety.com/images/incubateur-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.todayholdingsociety.com/incubateur">
+    <meta property="twitter:title" content="Aperçu de l'Incubateur des Projets Today">
+    <meta property="twitter:description" content="Découvrez nos concepts innovants de maturation de projets à travers le monde">
+    <meta property="twitter:image" content="https://www.todayholdingsociety.com/images/incubateur-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.todayholdingsociety.com/incubateur">
+    
+    <title>Aperçu de l'Incubateur des Projets Today</title>
+    
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Today Holding Society",
+      "url": "https://www.todayholdingsociety.com/",
+      "logo": "https://www.todayholdingsociety.com/images/logo.png",
+      "description": "Incubateur de projets innovants à travers le monde",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Résidences NOKAY 17, étage 1, porte B",
+        "addressLocality": "Yaoundé-Bastos",
+        "addressCountry": "Cameroun"
+      }
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0c0cc9ff',
+                        secondary: '#2D3748',
+                        accent: '#0c0cc9ff',
+                        red: {
+                            600: '#e53e3e',
+                            700: '#c53030'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 6s ease-in-out infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0ac2 0%,  #1cbd72 100%);
+        }
+        
+        .company-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .company-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            background: linear-gradient(135deg, #0606aa 0%,  #1cbd72 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.2rem;
+        }
+        
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .maturity-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .maturity-high {
+            background-color: #e53e3e;
+            color: white;
+        }
+        
+        .maturity-medium {
+            background-color: #ed8936;
+            color: white;
+        }
+        
+        .maturity-low {
+            background-color: #ecc94b;
+            color: #744210;
+        }
+        
+        .concept-card {
+            border-left: 4px solid #0c0cc9ff;
+            transition: all 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            border-left: 4px solid #e53e3e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-item {
+            padding-left: 1.5rem;
+            border-left: 2px solid #e2e8f0;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .project-item:hover {
+            border-left: 2px solid #0c0cc9ff;
+            background-color: #f7fafc;
+        }
+        
+        .dark .project-item:hover {
+            background-color: #2d3748;
+        }
+        
+        .cost-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .dark .cost-badge {
+            background-color: #2a4365;
+            color: #90cdf4;
+        }
+        
+        .sector-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: #f0fff4;
+            color: #2f855a;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+        .dark .sector-badge {
+            background-color: #22543d;
+            color: #9ae6b4;
+        }
+        
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ff3341; 
+        }
+        
+        .animate-slide-up {
+            animation: slide-up 0.5s ease forwards;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .rotative-logo {
+            width: 150px;
+            height: auto;
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .custom-logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            background: linear-gradient(135deg, #0a0ac2 0%,  #1cbd72 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    
+</head>
+
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300 font-sans">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/237674028128" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="logo-container">
+                        <div class="custom-logo">
+                            <img src="logos.png" alt="TH">
+                        </div>
+                        <div class="logo text-primary">
+                            <span>Today Holding Society</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="todayholding.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
+                        <a href="#concepts" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Concepts</a>
+                        <a href="#statistiques" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Statistiques</a>
+                        <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="text-gray-700 dark:text-gray-300 hover:text-primary p-2">
+                            <i class="fas fa-bars text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 min-h-screen flex items-center gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="custom-logo" style="width: 100px; height: 100px; font-size: 40px;">
+                        <img src="logos.png" alt="TH" class="rotative-logo">
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up">
+                    Incubateur des Projets Today
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-slide-up">
+                    <strong>Maturation de conception 95 à 100%</strong> - Développement de projets innovants à travers le monde
+                </p>
+                <div class="animate-slide-up">
+                    <button onclick="scrollToSection('concepts')" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Découvrir nos concepts
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Concepts Section -->
+    <section id="concepts" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Nos Concepts d'Incubation
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Découvrez nos différents concepts de projets avec leur niveau de maturation
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Concept Multiplex -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 concept-card">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Concept Multiplex
+                        <span class="maturity-badge maturity-high">Maturité 95-100%</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        + de 200 projets prévus : 4 pour le Cameroun + 1 à 4 pour chaque autre pays du monde
+                    </p>
+                    <div class="mb-2">
+                        <span class="sector-badge">Médecine</span>
+                        <span class="sector-badge">Pharmacie</span>
+                        <span class="sector-badge">Industrie</span>
+                        <span class="sector-badge">Hôtellerie</span>
+                        <span class="sector-badge">Grande Distribution</span>
+                        <span class="sector-badge">Environnement</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Multiplex Cameroun (Phases 1 à 4)</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Coût total : <span class="cost-badge">3 milliards USD</span></p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Multiplex Gabon (Phases 1 et 2)</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Maturité de conception 5% - Coût prévisionnel : <span class="cost-badge">1 à 3 milliards USD</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Concept I-Nov -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 concept-card">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Concept I-Nov (Industries Nouvelles d'Afrique)
+                        <span class="maturity-badge maturity-high">Maturité 95-100%</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        + de 50 projets prévus : 1 ou 2 pour certains pays Africains
+                    </p>
+                    <div class="mb-2">
+                        <span class="sector-badge">Industrie Générale</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">I-Nov Cameroun Phase 1</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Coût : <span class="cost-badge">1 milliard USD</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Concept Pro-TV -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 concept-card">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Concept Pro-TV (Produire, Transformer et Vendre)
+                        <span class="maturity-badge maturity-high">Maturité 95-100%</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        + de 300 projets prévus : 8 pour le Cameroun + 1 à 4 pour chaque autre pays Africain
+                    </p>
+                    <div class="mb-2">
+                        <span class="sector-badge">Agriculture</span>
+                        <span class="sector-badge">Pastorale</span>
+                        <span class="sector-badge">Energie</span>
+                        <span class="sector-badge">Industrie Générale</span>
+                        <span class="sector-badge">Grande Distribution</span>
+                        <span class="sector-badge">Environnement</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Pro-TV Cameroun Section Agropastorale Phase 1</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Coût : <span class="cost-badge">1,2 milliard USD</span></p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Pro-TV Cameroun SA Phase 3A</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Coût : <span class="cost-badge">60,1 millions USD</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Concept Good Farm -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 concept-card">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Concept Good Farm
+                        <span class="maturity-badge maturity-high">Maturité 95-100%</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        + de 100 projets prévus : 5 pour le Cameroun + 1 à 4 pour chaque autre pays Africain
+                    </p>
+                    <div class="mb-2">
+                        <span class="sector-badge">Agro-industrie</span>
+                        <span class="sector-badge">Energie</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Good Farm Cameroun Phase 1</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Coût : <span class="cost-badge">1,5 milliard USD</span></p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Mise en place d'une industrie sucrière et d'un parc éolien à Ndelele, à l'Est-Cameroun</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Autres concepts (résumés) -->
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 concept-card">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                        Autres Concepts Innovants
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Concept Développement Rural</h4>
+                            <p class="text-gray-600 dark:text-gray-300">+ de 5 000 projets prévus pour le monde</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Forêts Communautaires du Cameroun Phase 1 : <span class="cost-badge">280 millions USD</span></p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Concept Banque-Télécom</h4>
+                            <p class="text-gray-600 dark:text-gray-300">+ de 200 projets prévus</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Banque-Télécom Cameroun Phase 1 : <span class="cost-badge">3,9 milliards USD</span></p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Concept Seco (Sport-Economie)</h4>
+                            <p class="text-gray-600 dark:text-gray-300">12 projets prévus pour pays Africains</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Seco Niger : <span class="cost-badge">6,54 milliards USD</span></p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Concept Today Export</h4>
+                            <p class="text-gray-600 dark:text-gray-300">+ de 200 projets prévus</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">CAMEX Phase 1 : <span class="cost-badge">70 millions USD</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques Section -->
+    <section id="statistiques" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Chiffres Clés de l'Incubateur
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Une vision ambitieuse pour le développement de projets à travers le monde
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card bg-gradient-to-br from-primary to-purple-600 rounded-2xl p-6 text-center text-white">
+                    <div class="text-3xl font-bold mb-2">15+</div>
+                    <div class="text-lg">Concepts Innovants</div>
+                </div>
+                
+                <div class="stat-card bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-6 text-center text-white">
+                    <div class="text-3xl font-bold mb-2">8 000+</div>
+                    <div class="text-lg">Projets Prévus</div>
+                </div>
+                
+                <div class="stat-card bg-gradient-to-br from-red-500 to-red-700 rounded-2xl p-6 text-center text-white">
+                    <div class="text-3xl font-bold mb-2">100+</div>
+                    <div class="text-lg">Milliards USD</div>
+                    <div class="text-sm">Investissement Total</div>
+                </div>
+                
+                <div class="stat-card bg-gradient-to-br from-yellow-500 to-yellow-700 rounded-2xl p-6 text-center text-white">
+                    <div class="text-3xl font-bold mb-2">20+</div>
+                    <div class="text-lg">Secteurs d'Activité</div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Répartition des Projets par Concept</h3>
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-3">Concepts Majeurs</h4>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Développement Rural</span>
+                                    <span class="font-semibold">5 000+ projets</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>API (Agro-Pastorale et Industrie)</span>
+                                    <span class="font-semibold">2 000+ projets</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Pro-TV</span>
+                                    <span class="font-semibold">300+ projets</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Multiplex</span>
+                                    <span class="font-semibold">200+ projets</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-3">Secteurs Principaux</h4>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Agro-industrie</span>
+                                    <span class="font-semibold">35%</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Industrie</span>
+                                    <span class="font-semibold">25%</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Énergie</span>
+                                    <span class="font-semibold">15%</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Services</span>
+                                    <span class="font-semibold">25%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ajout de la section C.2. APERÇU DE L'INCUBATEUR DES PROJETS TODAY -->
+                    <div class="mt-8 p-6 bg-red-50 dark:bg-red-900/20 rounded-xl border-l-4 border-red-600">
+                        <h4 class="text-xl font-bold text-red-800 dark:text-red-300 mb-4">C.2. APERÇU DE L'INCUBATEUR DES PROJETS TODAY</h4>
+                        <p class="text-red-700 dark:text-red-300 mb-4"><strong>(En rouge, Maturité de conception 95 à 100 %)</strong></p>
+                        
+                        <div class="space-y-4">
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Multiplex (+ de 200 projets prévus : 4 pour le Cameroun + 1 à 4 pour chaque autre pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Médecine, Pharmacie, Industrie, Hôtellerie, Grande Distribution, Environnement</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Multiplex Cameroun (Phases 1 à 4) ; coût total : 3 milliards USD</li>
+                                    <li>• Multiplex Gabon (Phases 1 et 2 ; Maturité de conception 5%) ; coût prévisionnel : 1 à 3 milliards USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept I-Nov (Industries Nouvelles d'Afrique) (+ de 50 projets prévus : 1 ou 2 pour certains pays Africains)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEUR : Industrie Générale</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• I-Nov Cameroun Phase 1 ; coût : 1 milliard USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Pro-TV (Produire, Transformer et Vendre), (+ de 300 projets prévus : 8 pour le Cameroun + 1 à 4 pour chaque autre pays Africain)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Agriculture, Pastorale, Energie, Industrie Générale, Grande Distribution, Environnement</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Pro-TV Cameroun Section Agropastorale Phase 1 ; coût : 1,2 milliard USD</li>
+                                    <li>• Pro-TV Cameroun SA Phase 3A; Coût 60,1 millions USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Good Farm (+ de 100 projets prévus : 5 pour le Cameroun + 1 à 4 pour chaque autre pays Africain)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Agro-industrie, Energie</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Good Farm Cameroun Phase 1; coût : 1,5 milliard USD ; (mise en place d'une industrie sucrière et d'un parc éolien à Ndelele, à l'Est-Cameroun)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Développement Rural (+ de 5 000 projets prévus pour le monde : une centaine pour le Cameroun)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Mines, Agriculture, Energie, Industrie, Sport, Social, etc.</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Forêts Communautaires du Cameroun Phase 1 ; coût : 280 millions USD sur une forêt de 2 000 hectares ; (modèle applicable aux 122 forêts communautaires attribuées par l'Etat du Cameroun ; chaque forêt attribuée représentant 2 000 à 5 000 hectares) ; Coût total potentiel des 122 projets : entre 34 et 50 milliards USD. En cas de nécessité, les forêts pourraient constituer la garantie au financement</li>
+                                    <li>• DDR-10 Cameroun Phase 1 (Désenclavement et Développement de 10 zones Rurales Camerounaises) ; coût : 9,6 milliards USD (10 projets prévus pour le Cameroun)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Banque-Télécom (+ de 200 projets prévus : 3 ou 4 pour le Cameroun, et au moins 1 pour chaque autre pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Finance, Numérique, Technologies</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Banque-Télécom Cameroun Phase 1 ; coût : 3,9 milliards USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Seco (Sport-Economie) : (12 projets prévus, pour les pays Africains suivants : Nigéria, Ethiopie, RDC, Egypte, Afrique du Sud, Tanzania, Ouganda, Algérie, Ghana, Cameroun, Côte d'Ivoire, Niger)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Sport, Industrie, Social</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Seco Niger ; coût : 6,54 milliards USD ; SECTEURS : Sport, Industrie, Hôtellerie, Agro-Pastorale</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept PLANEGI (Plan d'Entretien des Grandes Infrastructures) ; Maturité de conception 5% ; (+ de 100 projets prévus, pour certains pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : divers</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• PLANEGI Cameroun (Maturité de conception 5%) ; coût prévisionnel : 3 à 5 milliards USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept TDI (Today Digital Industry) (+ de 50 projets prévus, pour certains pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Numérique, Technologies</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• GLODINA (Global Digital Industry Africa); coût : 3,5 milliards USD</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Today Export (+ de 200 projets prévus, pour tous les pays)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Divers</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• CAMEX (Cameroon Meat Export) Phase 1 ; coût : 70 millions USD; SECTEURS : Elevage + Exportation</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept GMA (Gisements Miniers d'Afrique) (+ de 200 projets prévus, une dizaine pour le Cameroun et au moins un pour certains autres pays)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Minier, social</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• CMI Cameroun Phase 1 (Compagnie Minière Internationale) ; coût : 15 millions USD ; (Exploitation artisanale Or, Négoce de Minerais)</li>
+                                    <li>• Nkoleban Stone Mining coût : 1,92 milliard USD ; (Exploitation Or, Fer, Métaux rares, Négoce de Minerais, Activités sociales). Projet basé sur un permis de recherche attribué à la société Stone Mining</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept CTA (Chimie Tous Azimuts) (+ de 100 projets prévus pour l'Afrique)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Mines, Chimie, Social</p>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept FESTI (Mise en place de rassemblements populaires, à caractère culturel) ; (+ de 200 projets prévus, pour tous les pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEUR : Evénementiel</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Excell Cameroun (Festival Excellence) ; Maturité de conception 5 %</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Today Energy (+ de 200 projets prévus, pour tous les pays du monde)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEUR : Energie, Divers</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• ETC (Electrification Totale du Cameroun) ; Maturité de conception 25 %; SECTEURS : Agriculture, Energie, Industrie Générale</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Marina (+ de 100 projets prévus ; au moins 3 pour le Cameroun)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Activités Aquatiques industrielles et de plaisance</p>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept Afrique ECO (Eco Farm, Eco Business, Eco Energy) (+ de 500 projets prévus pour l'Afrique, dont au moins 20 pour le Cameroun)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Agro-industrie, Social, Divers</p>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept API (Agro-Pastorale et Industrie) (+ de 2 000 projets Communaux prévus pour l'Afrique, dont au moins 300 pour le Cameroun)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Agriculture, élevage, agro-industrie</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• Projet API Phase 1 (Biabegoura) ; coût : 560 millions FCFA (modèle applicable pour au moins 200 des 360 Communes du Cameroun)</li>
+                                    <li>• Projet API Phase 2 (Soa) ; coût : 560 millions FCFA (identique au modèle précédent)</li>
+                                    <li>• Projet API Phase 3 (Mfou) ; coût : 560 millions FCFA (identique au modèle précédent)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Concept FENACO (Fermes Nationales Communales) (+ de 100 projets prévus pour l'Afrique, dont 4 pour le Cameroun)</h5>
+                                <p class="text-red-700 dark:text-red-300">SECTEURS : Elevage, Agro-industrie, Commerce</p>
+                                <ul class="ml-6 mt-2 text-red-700 dark:text-red-300">
+                                    <li>• FENACO Cameroun phase 1 coût : 25 millions FCFA</li>
+                                    <li>• FENACO Cameroun phase 2 coût : 250 millions FCFA</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-item border-red-200">
+                                <h5 class="font-semibold text-red-800 dark:text-red-300">Etc.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Intéressé par nos projets?
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                    Contactez-nous pour plus d'informations sur nos concepts d'incubation
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6 company-card rounded-xl">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Adresse</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Cameroun-Yaoundé-Bastos</p>
+                </div>
+                
+                <div class="text-center p-6 company-card rounded-xl">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Téléphone</h3>
+                    <p class="text-gray-600 dark:text-gray-300">+237 674 028 128</p>
+                </div>
+                
+                <div class="text-center p-6 company-card rounded-xl">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
+                    <p class="text-gray-600 dark:text-gray-300">todaycmrecrutements@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="mt-16 bg-white dark:bg-gray-700 rounded-2xl p-8 company-card">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Demande d'information</h3>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nom complet</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-600 text-gray-900 dark:text-white">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Adresse email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-600 text-gray-900 dark:text-white">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Sujet</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-600 text-gray-900 dark:text-white">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-600 text-gray-900 dark:text-white"></textarea>
+                    </div>
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                            Envoyer la demande
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="custom-logo mr-3">
+                            <img src="logos.png" alt="TH" class="rotative-logo"> 
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">
+                            Today Holding Incubateur
+                        </h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Développement et maturation de projets innovants à travers le monde
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Cameroun-Yaoundé-Bastos, derrière l'ambassade de chine immeuble RESIDENCES NOKAY 17, étage 1, porte B
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Accueil</a></li>
+                        <li><a href="#concepts" class="hover:text-primary transition-colors">Concepts</a></li>
+                        <li><a href="#statistiques" class="hover:text-primary transition-colors">Statistiques</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://wa.me/237674028128" class="inline-flex items-center text-green-400 hover:text-green-300 transition-colors">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                            <span>+237 674 028 128</span>
+                        </a>
+                    </div>
+                    <div class="marquee mt-4 text-green-400">
+                        <strong>Ingénieur chef de projet expert en conception, pilotage et métrique des systèmes d'information</strong> : 679546868
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Today Holding Incubateur. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du thème
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            
+            updateThemeIcon();
+        }
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            
+            updateThemeIcon();
+        }
+
+        function updateThemeIcon() {
+            const themeToggle = document.getElementById('theme-toggle');
+            if (!themeToggle) return;
+            
+            if (document.documentElement.classList.contains('dark')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+
+        // Navigation fluide
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (!element) return;
+            
+            const headerHeight = 64;
+            const elementPosition = element.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Animation au scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-slide-up');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            initTheme();
+            
+            // Écouteur pour le bouton de thème
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+            
+            animateOnScroll();
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>

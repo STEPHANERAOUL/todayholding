@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Today Holding Society - Valeurs et RSE. Découvrez notre vision, nos valeurs fondamentales et notre engagement en responsabilité sociétale.">
+    <meta name="keywords" content="Today Holding, valeurs d'entreprise, RSE, responsabilité sociétale, intégrité, compétence, développement durable">
+    <meta name="author" content="Today Holding Society">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0c0cc9ff">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.todayholdingsociety.com/valeurs-rse">
+    <meta property="og:title" content="Valeurs et RSE - Today Holding Society">
+    <meta property="og:description" content="Découvrez les valeurs fondamentales et l'engagement RSE de Today Holding Society">
+    <meta property="og:image" content="https://www.todayholdingsociety.com/images/valeurs-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.todayholdingsociety.com/valeurs-rse">
+    <meta property="twitter:title" content="Valeurs et RSE - Today Holding Society">
+    <meta property="twitter:description" content="Découvrez les valeurs fondamentales et l'engagement RSE de Today Holding Society">
+    <meta property="twitter:image" content="https://www.todayholdingsociety.com/images/valeurs-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.todayholdingsociety.com/valeurs-rse">
+    
+    <title>Valeurs et RSE - Today Holding Society</title>
+    
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0c0cc9ff;
+            --primary-dark: #0909a5;
+            --secondary: #2D3748;
+            --accent: #1cbd72;
+            --light: #ffffff;
+            --dark: #343a40;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --gray: #6c757d;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: cover;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-icon {
+            margin-right: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+        }
+
+        .nav-item {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav-link i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background-color: rgba(12, 12, 201, 0.1);
+        }
+
+        .nav-link.active {
+            color: white;
+            background-color: var(--primary);
+        }
+
+        .nav-link.active i {
+            color: white;
+        }
+
+        /* Section Styles */
+        section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2.5rem;
+            transition: var(--transition);
+        }
+
+        section:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.8rem;
+            margin: 0 0 2rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 i {
+            margin-right: 12px;
+        }
+
+        h3 {
+            color: var(--dark);
+            margin: 1.8rem 0 1.2rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .value-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Classification Table */
+        .classification-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .classification-table th, 
+        .classification-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .classification-table th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .classification-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .classification-table tr:hover {
+            background-color: #e9ecef;
+        }
+
+        .level-1 { background-color: #d4edda !important; }
+        .level-2 { background-color: #c3e6cb !important; }
+        .level-3 { background-color: #f8d7da !important; }
+        .level-4 { background-color: #fff3cd !important; }
+        .level-5 { background-color: #ffeaa7 !important; }
+        .level-6 { background-color: #f8d7da !important; }
+        .level-7 { background-color: #ffb3b3 !important; }
+        .level-8 { background-color: #ff8080 !important; }
+
+        /* Quote Styles */
+        .quote {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin: 2.5rem 0;
+            font-style: italic;
+            border-left: 5px solid var(--primary);
+            position: relative;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 3rem;
+            opacity: 0.1;
+            color: var(--primary);
+        }
+
+        /* RSE Pillars */
+        .rse-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pillar {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--success);
+            transition: var(--transition);
+        }
+
+        .pillar:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .pillar-icon {
+            font-size: 2.5rem;
+            color: var(--success);
+            margin-bottom: 1rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.9rem 1.8rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+         .logo-image {
+        width: 80px;
+        height: auto; 
+        margin-right: 10px; 
+    }
+
+    .logo-icon {
+        font-size: 2em; 
+        color: blue;
+        margin-right: 10px; 
+    }
+
+    .logo-text {
+        font-size: 1.5em; 
+        font-weight: bold; 
+    }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            background: linear-gradient(135deg, var(--dark), #212529);
+            color: white;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .footer-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Dynamic Elements */
+        .dynamic-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.7rem 1.5rem;
+            background: linear-gradient(135deg, var(--accent), #1aac68);
+            color: white;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .dynamic-badge i {
+            margin-right: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .values-grid, .rse-pillars {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            section {
+                padding: 1.8rem;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-item {
+                padding: 0.5rem;
+            }
+            
+            .classification-table {
+                font-size: 0.85rem;
+            }
+            
+            .classification-table th, 
+            .classification-table td {
+                padding: 0.8rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logos.png" alt="Logo" class="logo-image">
+                <i class="fas fa-building logo-icon"></i>
+                <span>Today Holding Society</span>
+            </div>
+            <h1>Valeurs et Responsabilité Sociétale</h1>
+            <p class="header-subtitle">
+                Découvrez les principes fondamentaux qui guident nos actions, notre gestion et notre engagement envers la société et l'environnement.
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navigation -->
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="todayholding.html" class="nav-link">
+                        <i class="fas fa-home"></i> Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="todayholding.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> À Propos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="todayholding.html" class="nav-link">
+                        <i class="fas fa-project-diagram"></i> Nos Projets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="todayholding.html" class="nav-link">
+                        <i class="fas fa-handshake"></i> Nos Partenaires
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="valeur.html" class="nav-link active">
+                        <i class="fas fa-heart"></i> Valeurs & RSE
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="todayholding.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="animate-fade-in">
+            <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+            <p>
+                Chez TODAY, nous croyons que la force d'une entreprise réside dans ses valeurs, sa vision et son engagement envers la société. 
+                Ce document présente les principes fondamentaux qui guident nos actions, notre gestion et notre responsabilité sociétale.
+            </p>
+            <p>
+                Notre approche unique combine excellence opérationnelle, innovation responsable et impact sociétal positif, 
+                faisant de TODAY un acteur majeur du développement économique durable en Afrique.
+            </p>
+        </section>
+
+        <!-- Vision et Valeurs Fondamentales -->
+        <section id="vision-valeurs" class="animate-slide-up">
+            <h2><i class="fas fa-bullseye"></i> Vision et Valeurs Fondamentales</h2>
+            
+            <h3><i class="fas fa-eye"></i> Notre Vision</h3>
+            <p>
+                Créer un écosystème économique intégré, innovant et durable, reliant les zones urbaines et rurales, 
+                et favorisant les échanges régionaux et internationaux.
+            </p>
+            
+            <h3><i class="fas fa-star"></i> Nos Valeurs Clés</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Intégrité et Compétence</h4>
+                    <p>Le socle de toutes nos décisions et actions. Nous privilégions toujours l'éthique et l'expertise.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Innovation et Audace</h4>
+                    <p>Nous encourageons les idées novatrices et les soutenons financièrement. Nous osons prendre des risques calculés.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h4>Polyvalence et Mobilité Interne</h4>
+                    <p>Chaque employé a la possibilité d'évoluer et de multiplier ses compétences à travers différents postes.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-scale-balanced"></i></div>
+                    <h4>Equité et Méritocratie</h4>
+                    <p>La compétence prime sur le diplôme. Chaque collaborateur est évalué sur ses résultats et son potentiel.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modèle Économique et Stratégique -->
+        <section id="modele-economique" class="animate-slide-up">
+            <h2><i class="fas fa-chart-line"></i> Modèle Économique et Stratégique</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h4>Regroupement d'Activités Complémentaires</h4>
+                    <p>Intégration synergique des métiers au sein d'espaces partagés pour maximiser l'efficacité et l'innovation.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h4>Développement Équilibré</h4>
+                    <p>Harmonisation du développement entre villes urbaines et rurales, avec un accent particulier sur la revitalisation des zones rurales.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Autonomie et Exportation</h4>
+                    <p>Stratégie orientée vers la production locale et l'exportation, réduisant la dépendance aux importations.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-gavel"></i></div>
+                    <h4>Gestion par Appels d'Offres Internationaux</h4>
+                    <p>Confiance en des cabinets spécialisés sélectionnés via des processus internationaux transparents.</p>
+                </div>
+            </div>
+            
+            <div class="quote">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p>
+                    "Le fondateur de Multiplex a obtenu son financement sans frais de diligence initiaux, 
+                    grâce à la qualité exceptionnelle de son projet. Le financier a été séduit par la vision et le potentiel, 
+                    et s'est engagé à crédit."
+                </p>
+                <p><strong>Leçon : Ce n'est pas l'argent qui fait le projet, c'est le projet qui fait l'argent.</strong></p>
+            </div>
+        </section>
+
+        <!-- Culture et Gestion des Ressources Humaines -->
+        <section id="rh" class="animate-slide-up">
+            <h2><i class="fas fa-users"></i> Culture et Gestion des Ressources Humaines</h2>
+            
+            <h3><i class="fas fa-user-plus"></i> Recrutement et Évolution</h3>
+            <ul>
+                <li>Recrutement sur la base du potentiel, pas uniquement sur l'expérience ou le diplôme.</li>
+                <li>Possibilité d'évolution de ouvrier à directeur général grâce à notre programme de formation continue.</li>
+                <li>Plans de carrière personnalisés et mentorat pour accompagner chaque collaborateur.</li>
+                <li>Si vous avez une idée géniale, nous finançons la création de votre propre entreprise.</li>
+            </ul>
+            
+            <h3><i class="fas fa-chart-bar"></i> Grille de Classification du Personnel</h3>
+            <p>
+                Évaluation trimestrielle sur deux axes : <strong>Intégrité</strong> et <strong>Compétence</strong>. 
+                Cette évaluation détermine le niveau de chaque collaborateur et les mesures d'accompagnement nécessaires.
+            </p>
+           
+        </section>
+
+        <!-- Responsabilité Sociétale d'Entreprise (RSE) -->
+        <section id="rse" class="animate-slide-up">
+            <h2><i class="fas fa-hand-holding-heart"></i> Responsabilité Sociétale d'Entreprise (RSE)</h2>
+            
+            <h3><i class="fas fa-leaf"></i> Notre Philosophie RSE</h3>
+            <p>
+                La RSE chez TODAY est une extension naturelle de nos valeurs. Nous visons une contribution positive tangible 
+                à la société et à l'environnement, en intégrant les préoccupations sociales, environnementales et économiques 
+                dans nos activités.
+            </p>
+            
+            <h3><i class="fas fa-cloud-sun"></i> Lutte Contre la Pollution et le Réchauffement Climatique</h3>
+            <div class="rse-pillars">
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>✅ Énergie verte</h4>
+                    <p>Approvisionnement en électricité issue à 100% de sources renouvelables d'ici 2025. Installation de panneaux solaires sur tous nos sites.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-car"></i></div>
+                    <h4>✅ Flotte écologique</h4>
+                    <p>Utilisation exclusive de véhicules électriques ou hybrides. Objectif: zéro émission de CO2 pour notre flotte d'ici 2027.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>✅ Engagement international</h4>
+                    <p>Participation active aux COP et mise en œuvre de leurs résolutions. Partenariats avec des organisations environnementales mondiales.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-microphone"></i></div>
+                    <h4>✅ Sensibilisation continue</h4>
+                    <p>Programmes de formation et campagnes internes et externes. Ateliers mensuels sur les pratiques eco-responsables.</p>
+                </div>
+            </div>
+            
+            <h3><i class="fas fa-balance-scale"></i> Bonne Gouvernance et Absence de Discrimination</h3>
+            <ul>
+                <li>Gouvernance confiée à un cabinet international spécialisé sélectionné par appel d'offres pour garantir impartialité et expertise.</li>
+                <li>Politique de tolérance zéro contre toute forme de discrimination, avec un système de signalement anonyme et transparent.</li>
+                <li>Transparence dans toutes les opérations et décisions, avec publication trimestrielle de rapports détaillés.</li>
+            </ul>
+            
+            <h3><i class="fas fa-sitemap"></i> Structure RSE Décentralisée</h3>
+            <ul>
+                <li>Chaque filiale dispose d'une <strong>cellule RSE</strong> dédiée, avec un budget propre et des objectifs mesurables.</li>
+                <li>Pilotage par une expertise centrale recrutée internationalement, garantissant une cohérence globale et des meilleures pratiques.</li>
+                <li>Implication de tous les collaborateurs dans une dynamique RSE transversale, avec des objectifs individuels liés à la RSE.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="animate-slide-up">
+            <h2><i class="fas fa-flag-checkered"></i> Conclusion</h2>
+            <p>
+                Chez TODAY, nous construisons bien plus qu'une entreprise : nous bâtissons un modèle qui allie performance économique, 
+                responsabilité sociale et innovation durable. Notre approche holistique intègre toutes les parties prenantes 
+                dans une vision de progrès partagé.
+            </p>
+            <p>
+                Rejoignez-nous pour écrire ensemble l'avenir - un avenir où l'entreprise est un acteur positif 
+                de transformation sociétale et environnementale.
+            </p>
+            
+            <div class="dynamic-badge">
+                <i class="fas fa-sync-alt"></i> Document dynamique – Mis à jour trimestriellement
+            </div>
+            <p><em>Pour toute suggestion ou contribution, contactez la cellule RSE de votre entité.</em></p>
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <button class="btn" onclick="window.print()">
+                    <i class="fas fa-print"></i> Imprimer ce document
+                </button>
+                <a href="todayholding.html" class="btn btn-outline" style="margin-left: 10px;">
+                    <i class="fas fa-envelope"></i> Nous contacter
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; color: white; margin-bottom: 1rem;">
+                <i class="fas fa-building" style="color: var(--accent);"></i>
+                <span>Today Holding Society</span>
+            </div>
+            <p>Innovation, Intégrité, Impact</p>
+            
+            <div class="footer-links">
+                <a href="todayholding.html" class="footer-link">Accueil</a>
+                <a href="todayholding.html" class="footer-link">À Propos</a>
+                <a href="todayholding.html" class="footer-link">Projets</a>
+                <a href="valeur.html" class="footer-link">Valeurs & RSE</a>
+                <a href="todayholding.html" class="footer-link">Contact</a>
+            </div>
+            
+            <p>&copy; 2024 Today Holding Society. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animation au défilement
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-slide-up');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation initiale
+            animateOnScroll();
+            
+            // Mettre à jour l'année du copyright
+            document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} Today Holding Society. Tous droits réservés.`;
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
